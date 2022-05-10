@@ -2,6 +2,8 @@ package ProiectFinal;
 
 import static org.junit.Assert.*;
 
+import javax.swing.JToggleButton;
+
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -15,16 +17,17 @@ public class TestProiectFinalTest {
 
 	@After
 	public void tearDown() throws Exception {
+		System.out.println("dupa testare");
 	}
 
 	@Test
 	public void testFinalizare() {
-		fail("Not yet implemented");
+		TestProiectFinal p = new TestProiectFinal();
+		
+		JToggleButton TogglePizzaSimpla = new JToggleButton("Pizza Simpla");
+		
+		assertTrue(TogglePizzaSimpla.isSelected() == false );
 	}
 
-	@Test
-	public void testToggleButonApasat() {
-		fail("Not yet implemented");
-	}
 
 }
